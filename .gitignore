@@ -1,2 +1,4 @@
 /ci/
+/dist/
 /Website/index.json
+__pycache__/
