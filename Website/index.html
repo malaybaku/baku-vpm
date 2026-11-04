@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>{{ listingInfo.Name }}</title>
+<style>
+body{font:16px/1.8 system-ui,sans-serif;margin:3rem auto;padding:0 1.25rem;max-width:760px;color:#253047;background:#f6f8fc}a{color:#1455b9}section{background:white;border:1px solid #dbe1ec;border-radius:12px;padding:1.5rem;margin:1.5rem 0}h1,h2{line-height:1.4}code{overflow-wrap:anywhere}.install{display:inline-block;padding:.6rem 1.2rem;background:#1455b9;color:white;border-radius:6px;text-decoration:none}footer{font-size:.9rem}
+</style>
+</head>
+<body>
+<h1>{{ listingInfo.Name }}</h1>
+<p>{{ listingInfo.Description }}</p>
+<section>
+<h2>VCCに追加</h2>
+<p><a class="install" href="vcc://vpm/addRepo?url=https%3A%2F%2Fmalaybaku.github.io%2Fbaku-vpm%2Findex.json">Add to VCC</a></p>
+<p>ボタンが動作しない場合は、VCCのSettings → Packagesから以下のURLを追加してください。</p>
+<code>{{ listingInfo.Url }}</code>
+</section>
+{{ for package in packages }}
+<section>
+<h2>{{ package.DisplayName }}</h2>
+<p>{{ package.Description }}</p>
+<p><code>{{ package.Name }}</code> / {{ package.Version }}</p>
+<p>初期公開はオープンベータです。アバターのUnityプロジェクトをバックアップしてから導入してください。</p>
+<p><a href="https://github.com/malaybaku/MaterialOverrideVrmVRC#readme">導入方法・対応範囲</a> / <a href="https://github.com/malaybaku/MaterialOverrideVrmVRC/issues">不具合報告</a></p>
+</section>
+{{ end }}
+<footer>Published by <a href="{{ listingInfo.Author.Url }}">{{ listingInfo.Author.Name }}</a> · <a href="https://github.com/malaybaku/baku-vpm">GitHub</a></footer>
+</body>
+</html>
