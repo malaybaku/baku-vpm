@@ -13,9 +13,9 @@
   },
   "packages": [
     {
-      "name": "com.baxter.material-override-vrm-vrc",
+      "name": "com.baxter.material-override-vrm",
       "releases": [
-        "https://github.com/malaybaku/MaterialOverrideVrmVRC/releases/download/0.1.0/com.baxter.material-override-vrm-vrc-0.1.0.zip"
+        "https://github.com/malaybaku/MaterialOverrideVrm/releases/download/v0.3.2/com.baxter.material-override-vrm-0.3.2.zip"
       ]
     }
   ]
