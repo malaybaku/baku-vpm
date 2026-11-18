@@ -15,7 +15,15 @@
     {
       "name": "com.baxter.material-override-vrm",
       "releases": [
-        "https://github.com/malaybaku/MaterialOverrideVrm/releases/download/v0.3.2/com.baxter.material-override-vrm-0.3.2.zip"
+        "https://github.com/malaybaku/MaterialOverrideVrm/releases/download/v0.3.2/com.baxter.material-override-vrm-0.3.2.zip",
+        "https://github.com/malaybaku/MaterialOverrideVrm/releases/download/v0.3.3/com.baxter.material-override-vrm-0.3.3.zip",
+        "https://github.com/malaybaku/MaterialOverrideVrm/releases/download/v0.3.4/com.baxter.material-override-vrm-0.3.4.zip"
+      ]
+    },
+    {
+      "name": "com.baxter.material-override-vrm-vrc",
+      "releases": [
+        "https://github.com/malaybaku/MaterialOverrideVrmVRC/releases/download/0.1.0/com.baxter.material-override-vrm-vrc-0.1.0.zip"
       ]
     }
   ]
